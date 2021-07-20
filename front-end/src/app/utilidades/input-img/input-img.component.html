@@ -1,0 +1,16 @@
+
+<div>
+    <button type="button" mat-raised-button (click)="fileInput.click()">
+        Seleccionar Imagen
+    </button>
+    <input type="file" hidden #fileInput (change)="change($event)">
+</div>
+
+<div>
+    <div *ngIf="imageBase64">
+        <img [src]="imageBase64">
+    </div>
+    <div *ngIf="urlImagenActual">
+        <img [src]="urlImagenActual"/>
+    </div>
+</div>

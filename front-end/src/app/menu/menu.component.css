@@ -1,0 +1,6 @@
+mat-toolbar{
+    position: sticky;
+    position: -webkit-sticky;    /* para que funcione en safary*/
+    top: 0;                      /* para que se coloque arriba */
+    z-index: 1000;              /*para que se coloque encima de otros elementos */
+}
